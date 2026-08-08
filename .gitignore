@@ -1,1 +1,4 @@
-x402-demo-server/.env.meme-generator
+.env.local
+node_modules
+dist
+src/convex/_generated

@@ -1,0 +1,25 @@
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'x402-demo-server/.env.example', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'x402-demo-server/README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'x402-demo-server/endpoints.config.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'x402-demo-server/handlers/ai-analysis.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'x402-demo-server/handlers/analytics.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'x402-demo-server/handlers/creator-content.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'x402-demo-server/handlers/weather.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'x402-demo-server/index.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'x402-demo-server/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'x402-demo-server/tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+ .gitignore                                   |   5 [32m+[m[31m-[m
+ README.md                                    | 725 [32m+++++++++++[m[31m----------------[m
+ x402-demo-server/.env.example                |  13 [32m+[m[31m-[m
+ x402-demo-server/README.md                   | 557 [32m+++[m[31m-----------------[m
+ x402-demo-server/endpoints.config.ts         | 231 [32m++[m[31m-------[m
+ x402-demo-server/handlers/ai-analysis.ts     | 207 [32m+++[m[31m-----[m
+ x402-demo-server/handlers/analytics.ts       | 127 [32m++[m[31m---[m
+ x402-demo-server/handlers/creator-content.ts | 327 [32m+++[m[31m---------[m
+ x402-demo-server/handlers/weather.ts         |  92 [32m+[m[31m---[m
+ x402-demo-server/index.ts                    | 319 [32m++++[m[31m--------[m
+ x402-demo-server/package.json                |  11 [32m+[m[31m-[m
+ x402-demo-server/tsconfig.json               |  28 [32m+[m[31m-[m
+ 12 files changed, 723 insertions(+), 1919 deletions(-)

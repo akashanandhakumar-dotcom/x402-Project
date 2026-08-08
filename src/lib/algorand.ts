@@ -396,7 +396,7 @@ export async function fetchX402Quote(opts: {
 }): Promise<X402BrowserQuote> {
   const { x402HTTPClient } = await import("@x402/core/http");
   const { x402Client } = await import("@x402/core/client");
-  const { ExactAvmClient } = await import("@x402/avm");
+  const { ExactAvmScheme } = await import("@x402/avm");
 
   // A signer is not needed to decode a 402 response, so use a dummy client.
   const dummySigner = {
@@ -405,7 +405,7 @@ export async function fetchX402Quote(opts: {
   };
   const coreClient = new x402Client().register(
     "algorand:*" as any,
-    new ExactAvmClient(dummySigner as any),
+    new ExactAvmScheme(dummySigner as any),
   );
   const httpClient = new x402HTTPClient(coreClient);
 
@@ -462,12 +462,12 @@ export async function payForX402Resource(opts: {
 }) {
   const { x402Client } = await import("@x402/core/client");
   const { x402HTTPClient } = await import("@x402/core/http");
-  const { ExactAvmClient } = await import("@x402/avm");
+  const { ExactAvmScheme } = await import("@x402/avm");;
 
   const signer = await createBrowserAvmSigner(opts.kind, opts.walletAddress);
   const coreClient = new x402Client().register(
     "algorand:*" as any,
-    new ExactAvmClient(signer as any),
+    new ExactAvmScheme(signer as any),
   );
   const httpClient = new x402HTTPClient(coreClient);
 
